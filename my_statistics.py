@@ -1,7 +1,7 @@
 
 
-def compute_statistics(temperatures: list[float], 
-                       num_measurements: int) -> float:
+def compute_statistics(temperatures: list[float]) -> float:
+    num_measurements = len(temperatures)
     mean = sum(temperatures) / num_measurements
     return mean
 
